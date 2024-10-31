@@ -4,6 +4,7 @@ import { ProtectedRoute } from "./ProtectedRoute";
 import Login from "../pages/Login";
 import Logout from "../pages/Logout";
 import DBZCharacters from "../pages/DBZCharacters";
+import DBZCharactersRealTime from "../pages/DBZCharactersRealTime";
 import { Link } from "react-router-dom";
 
 const Routes = () => {
@@ -40,8 +41,9 @@ const Routes = () => {
               <p>Welcome! this route is shown to authenticated users.</p>                         
               <Link to="/logout">Logout</Link>              
               {/* REST API CALL */}
-              {/* <p><br/></p>
-              <p>Rest API Call: <DBZCharacters /></p>           */}
+              {/* <p><br/></p> */}
+              <DBZCharactersRealTime />
+              {/* <p>Rest API Call: <DBZCharacters /></p>           */}
             </div>
           ),
         },
