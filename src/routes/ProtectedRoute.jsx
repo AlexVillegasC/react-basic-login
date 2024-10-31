@@ -12,3 +12,6 @@ export const ProtectedRoute = () => {
   // Render children components if authenticated
   return <Outlet />;
 };
+
+
+export default ProtectedRoute;

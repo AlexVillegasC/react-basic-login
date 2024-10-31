@@ -3,6 +3,7 @@ import { useAuth } from "../provider/AuthProvider";
 import { ProtectedRoute } from "./ProtectedRoute";
 import Login from "../pages/Login";
 import Logout from "../pages/Logout";
+import DBZCharacters from "../pages/DBZCharacters";
 import { Link } from "react-router-dom";
 
 const Routes = () => {
@@ -36,8 +37,11 @@ const Routes = () => {
           element: (
             <div>
               <h1>Basic Route Protection Example</h1>
-              <p>Welcome! this route is shown to authenticated users.</p>
-              <Link to="/logout">Logout</Link>
+              <p>Welcome! this route is shown to authenticated users.</p>                         
+              <Link to="/logout">Logout</Link>              
+              {/* REST API CALL */}
+              {/* <p><br/></p>
+              <p>Rest API Call: <DBZCharacters /></p>           */}
             </div>
           ),
         },
